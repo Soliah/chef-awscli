@@ -6,6 +6,15 @@ Cookbook to install the [AWS CLI tools](https://github.com/aws/aws-cli).
 
 Only tested on Ubuntu 14.04, but should work on earlier versions.
 
+## Attributes
+
+### awscli::default
+
+Key                    | Type   | Description
+:----------------------|--------|----------------------------------------------------------
+`["awscli"]["config"]` | Hash   | A hash of config options to generate. Defaults to `{ region: "ap-southeast-2", users: ["root", "ubuntu"] }`
+
+
 ## Usage
 
 Just include `awscli` in your node's `run_list`:
