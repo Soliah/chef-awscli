@@ -21,5 +21,5 @@
 
 default[:awscli][:config] = {
   region: "ap-southeast-2",
-  users: ["root", "ubuntu"]
+  users: ["ubuntu"]
 }
