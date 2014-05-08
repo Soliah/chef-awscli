@@ -37,7 +37,7 @@ if node[:awscli][:config].any?
       owner user
       group user
       mode 0644
-      template "config.erb"
+      source "config.erb"
     end
   end
 end
