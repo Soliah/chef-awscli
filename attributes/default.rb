@@ -19,7 +19,7 @@
 # limitations under the License.
 #
 
+default[:awscli][:users] = ["ubuntu"]
 default[:awscli][:config] = {
-  region: "ap-southeast-2",
-  users: ["ubuntu"]
+  region: "ap-southeast-2"
 }

@@ -21,18 +21,16 @@
 
 include_recipe "python"
 
-python_pip "awscli" do
-  action :upgrade
-end
+python_pip "awscli"
 
-node[:awscli][:config][:users].each do |user|
+node[:awscli][:users].each do |user|
   directory "/home/#{user}/.aws" do
     action :create
   end
 end
 
 if node[:awscli][:config].any?
-  node[:awscli][:config][:users].each do |user|
+  node[:awscli][:users].each do |user|
     template "/home/#{user}/.aws/config" do
       owner user
       group user
