@@ -19,6 +19,7 @@
 # limitations under the License.
 #
 
+include_recipe "apt"
 include_recipe "python"
 
 python_pip "awscli"
