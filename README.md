@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/Soliah/chef-awscli.svg?style=svg)](https://circleci.com/gh/Soliah/chef-awscli)
+
 # cookbook-awscli
 
 Cookbook to install the [AWS CLI tools](https://github.com/aws/aws-cli).
@@ -5,15 +7,6 @@ Cookbook to install the [AWS CLI tools](https://github.com/aws/aws-cli).
 ## Requirements
 
 Only tested on Ubuntu 14.04, but should work on earlier versions.
-
-## Attributes
-
-### awscli::default
-
-Key                    | Type   | Description
-:----------------------|--------|----------------------------------------------------------
-`["awscli"]["config"]` | Hash   | A hash of config options to generate. Defaults to `{ region: "ap-southeast-2", users: ["root", "ubuntu"] }`
-
 
 ## Usage
 
@@ -29,7 +22,7 @@ Just include `awscli` in your node's `run_list`:
 
 ## License
 
-    Copyright 2014 Christopher Chow
+    Copyright 2016 Christopher Chow
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

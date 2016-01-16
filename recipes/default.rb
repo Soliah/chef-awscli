@@ -19,24 +19,5 @@
 # limitations under the License.
 #
 
-include_recipe "apt"
-include_recipe "python"
-
-python_pip "awscli"
-
-node[:awscli][:users].each do |user|
-  directory "/home/#{user}/.aws" do
-    action :create
-  end
-end
-
-if node[:awscli][:config].any?
-  node[:awscli][:users].each do |user|
-    template "/home/#{user}/.aws/config" do
-      owner user
-      group user
-      mode 0644
-      source "config.erb"
-    end
-  end
-end
+python_runtime "2"
+python_package "awscli"
