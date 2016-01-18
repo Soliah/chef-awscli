@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/Soliah/chef-awscli.svg?style=svg)](https://circleci.com/gh/Soliah/chef-awscli)
+[![Circle CI](https://circleci.com/gh/kinesisptyltd/chef-awscli.svg?style=svg)](https://circleci.com/gh/kinesisptyltd/chef-awscli)
 
 # cookbook-awscli
 
