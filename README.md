@@ -1,6 +1,6 @@
 [![Circle CI](https://circleci.com/gh/kinesisptyltd/chef-awscli.svg?style=svg)](https://circleci.com/gh/kinesisptyltd/chef-awscli)
 
-# cookbook-awscli
+# chef-awscli
 
 Cookbook to install the [AWS CLI tools](https://github.com/aws/aws-cli).
 
